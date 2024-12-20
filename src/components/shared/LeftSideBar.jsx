@@ -42,17 +42,17 @@ const LeftSideBar = () => {
             </div>
             <div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 ">
                    {
                     news.slice(0,3).map(currentNews=>(
-                        <>
+                        <div key={currentNews.id} className="my-8 space-y-3">
                         <img className="w-full rounded-lg" src={currentNews.thumbnail_url} alt="" />
-                   <h3 className="text-xl font-bold">{currentNews.title}</h3>
+                   <h3 className="text-xl font-medium">{currentNews.title}</h3>
                    <div className="flex gap-4 items-center">
-                   <h3 className="text-xl font-semibold">Sports</h3>
+                   <h3 className="text-lg font-medium">Sports</h3>
                    <p className="text-lg text-gray-300 flex items-center gap-2"> <FaCalendar></FaCalendar> {moment(currentNews.author.published_date).format('LL') }</p>
                    </div>
-                       </>
+                       </div>
                       
                     ))
                    }
