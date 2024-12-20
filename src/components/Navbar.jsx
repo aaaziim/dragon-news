@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import userDefaultPhoto from "../../assets/user.png"
 const Navbar = () => {
 
     const menuItems = <>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="w-10 rounded-full">
           <img
             alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            src={userDefaultPhoto} />
         </div>
       </div>
             <NavLink className="btn bg-gray-700 text-white" to="/signin">Sign In</NavLink>
