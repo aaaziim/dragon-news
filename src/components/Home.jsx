@@ -2,7 +2,6 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import LeftSideBar from "./shared/LeftSideBar";
 import RightSideBar from "./shared/RightSideBar";
-
 const Home = () => {
     return (
         <div>
